@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: rgb(73,192,204);
+  background: -moz-linear-gradient(129deg, rgba(73,192,204,1) 38%, rgba(101,151,247,1) 72%, rgba(96,118,239,1) 100%);
+  background: -webkit-linear-gradient(129deg, rgba(73,192,204,1) 38%, rgba(101,151,247,1) 72%, rgba(96,118,239,1) 100%);
+  background: linear-gradient(129deg, rgba(73,192,204,1) 38%, rgba(101,151,247,1) 72%, rgba(96,118,239,1) 100%);
+}
+
+.glass {
+  width: 1260px;
+  height: 925px;
+  background: linear-gradient(
+    111.52deg,
+    rgba(255, 255, 255, 0.48) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  backdrop-filter: blur(1.3rem);
+  border-radius: 15px;
+  z-index: 3;
+}
+
+.circle1, .circle2 {
+  background: linear-gradient(
+    100.76deg,
+    rgba(255, 255, 255, 0.1) -4.9%,
+    rgba(255, 255, 255, 0.6) 85.54%
+  );
+  backdrop-filter: blur(100px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 50%;
+  transform: rotate(-100.77deg);
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+}
+
+.circle1 {
+  top: 5%;
+  right: 20%
+}
+
+.circle2 {
+  bottom: 5%;
+  left: 20%
+}
