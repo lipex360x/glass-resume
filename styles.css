@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Poppins;
 }
 
 main {
@@ -9,47 +10,121 @@ main {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: rgb(73,192,204);
-  background: -moz-linear-gradient(129deg, rgba(73,192,204,1) 38%, rgba(101,151,247,1) 72%, rgba(96,118,239,1) 100%);
-  background: -webkit-linear-gradient(129deg, rgba(73,192,204,1) 38%, rgba(101,151,247,1) 72%, rgba(96,118,239,1) 100%);
-  background: linear-gradient(129deg, rgba(73,192,204,1) 38%, rgba(101,151,247,1) 72%, rgba(96,118,239,1) 100%);
+  background: rgb(73, 192, 204);
+  background: -moz-linear-gradient(
+    129deg,
+    rgba(73, 192, 204, 1) 38%,
+    rgba(101, 151, 247, 1) 72%,
+    rgba(96, 118, 239, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    129deg,
+    rgba(73, 192, 204, 1) 38%,
+    rgba(101, 151, 247, 1) 72%,
+    rgba(96, 118, 239, 1) 100%
+  );
+  background: linear-gradient(
+    129deg,
+    rgba(73, 192, 204, 1) 38%,
+    rgba(101, 151, 247, 1) 72%,
+    rgba(96, 118, 239, 1) 100%
+  );
+}
+
+h2 {
+  color: #4D6FB3;
+  opacity: 0.9;
+  font-weight: 600;
+}
+
+h3 {
+  color: #4D6FB3;
+  opacity: 0.9;
+  font-weight: 500;
 }
 
 .glass {
+  display: flex;
   width: 1260px;
-  height: 925px;
+  height: 800px;
+  
   background: linear-gradient(
     111.52deg,
     rgba(255, 255, 255, 0.48) 0%,
     rgba(255, 255, 255, 0.1) 100%
   );
   backdrop-filter: blur(1.3rem);
+
   border-radius: 15px;
   z-index: 3;
 }
 
-.circle1, .circle2 {
+.circle1,
+.circle2 {
   background: linear-gradient(
     100.76deg,
-    rgba(255, 255, 255, 0.1) -4.9%,
-    rgba(255, 255, 255, 0.6) 85.54%
+    rgba(255, 255, 255, 0.02) -4.9%,
+    rgba(255, 255, 255, 0.3) 85.54%
   );
   backdrop-filter: blur(100px);
-  /* Note: backdrop-filter has minimal browser support */
 
   border-radius: 50%;
   transform: rotate(-100.77deg);
   position: absolute;
-  width: 20rem;
-  height: 20rem;
+  width: 30rem;
+  height: 30rem;
 }
 
 .circle1 {
-  top: 5%;
-  right: 20%
+  top: 4%;
+  right: 10%;
 }
 
 .circle2 {
   bottom: 5%;
-  left: 20%
+  left: 10%;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  
+  width: 420px;
+  height: 800px;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(
+    111.52deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.15) 100%
+  );
+
+  border-radius: 15px 0 0 15px;
+}
+
+.my-info {
+  text-align: center;
+  margin: 4rem ;
+}
+
+.my-info p {
+  font-weight: 400;
+  color: #565656;
+  opacity: 0.8;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  padding: 0.7rem;
+}
+
+.link h3 {
+  margin-left: 1rem;
+}
+
+.skills {
+  flex: 2;
 }
