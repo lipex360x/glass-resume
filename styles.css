@@ -34,7 +34,7 @@ main {
 h2 {
   color: #4d6fb3;
   opacity: 0.9;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h3 {
@@ -105,6 +105,10 @@ h3 {
 
 .my-info {
   text-align: center;
+}
+
+.my-info img {
+  width: 70%
 }
 
 .my-info p {
